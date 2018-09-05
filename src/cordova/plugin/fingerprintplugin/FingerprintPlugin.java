@@ -77,7 +77,7 @@ public class FingerprintPlugin extends CordovaPlugin {
 
     		        callbackContext.success("onAuthenticationSucceeded");
     		    }
-    		})
+    		});
     	
     	
     	}else {
