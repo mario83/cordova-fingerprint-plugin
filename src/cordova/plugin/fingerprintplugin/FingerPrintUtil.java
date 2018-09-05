@@ -1,3 +1,7 @@
+package cordova.plugin.fingerprintplugin;
+
+import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
 
 public class FingerPrintUtil {
 

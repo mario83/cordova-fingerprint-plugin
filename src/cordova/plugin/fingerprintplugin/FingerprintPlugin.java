@@ -2,20 +2,23 @@ package cordova.plugin.fingerprintplugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaWebView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import android.os.Build;
 import android.util.Log;
+import android.annotation.TargetApi;
 
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
-import cordova.plugin.fingerprintplugin.FingerPrintUtil;
 
 /**
  * This class echoes a string called from JavaScript.
  */
+@TargetApi(23)
 public class FingerprintPlugin extends CordovaPlugin {
 
 	public static final String TAG = "FingerprintAuth";
@@ -51,11 +54,13 @@ public class FingerprintPlugin extends CordovaPlugin {
     	
     	if(fingerPrintUtil.isFingerprintAuthAvailable()) {
     		
-    		callbackContext.success("ok");
+    		callbackContext.success("fingerPrintUtil auth ok");
     	
     	}else {
     		 callbackContext.error("Fingerprint Authentication is not available");
     	}
+    	
+    	callbackContext.success("complete");
     	
     }
 }
