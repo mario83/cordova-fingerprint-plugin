@@ -5,7 +5,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
 import android.security.keystore.KeyProperties;
 import android.util.Log;
-import android.util.Log;
+import java.security.NoSuchAlgorithmException;
 import javax.crypto.Cipher;
 
 public class FingerPrintUtil {
