@@ -21,8 +21,8 @@ public class FingerprintPlugin extends CordovaPlugin {
         return false;
     }
 
-    private void authenticate(String message, CallbackContext callbackContext) {
-        callbackContext.success(message);
+    private void authenticate(CallbackContext callbackContext) {
+        callbackContext.success("message");
         // callbackContext.error("Expected one non-empty string argument.");
     }
 }
