@@ -20,10 +20,10 @@ public class FingerPrintUtil {
 		return fingerprintManager.isHardwareDetected() && fingerprintManager.hasEnrolledFingerprints();
 	}
 	
-	public boolean authenticate () {
+	public void authenticate () {
 		
 		if (!this.isFingerprintAuthAvailable()) {
-            return false;
+            return;
         }
 		
 //		fingerprintManager.authenticate(cryptoObject, cancellationSignal, 0 , this, null);
