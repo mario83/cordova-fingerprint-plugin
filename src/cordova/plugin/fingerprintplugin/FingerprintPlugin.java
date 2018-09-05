@@ -54,7 +54,31 @@ public class FingerprintPlugin extends CordovaPlugin {
     	
     	if(fingerPrintUtil.isFingerprintAuthAvailable()) {
     		
-    		callbackContext.success("fingerPrintUtil auth ok");
+    		fingerPrintUtil.authenticate(new FingerprintManager.AuthenticationCallback () {
+    			@Override
+    		    public void onAuthenticationError(int errMsgId, CharSequence errString) {
+    		        callbackContext.success("onAuthenticationError");
+    		    }
+
+    		    @Override
+    		    public void onAuthenticationFailed() {
+    		        callbackContext.success("onAuthenticationFailed");
+    		    }
+
+    		    @Override
+    		    public void onAuthenticationHelp(int helpMsgId,CharSequence helpString) {
+    		        callbackContext.success("onAuthenticationHelp");
+    		    }
+
+
+    		    @Override
+    		    public void onAuthenticationSucceeded(
+    		            FingerprintManager.AuthenticationResult result) {
+
+    		        callbackContext.success("onAuthenticationSucceeded");
+    		    }
+    		})
+    	
     	
     	}else {
     		 callbackContext.error("Fingerprint Authentication is not available");
