@@ -1,4 +1,4 @@
-package cordova-plugin-fingerprintplugin;
+package cordova.plugin.fingerprintplugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
