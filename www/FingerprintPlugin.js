@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'FingerprintPlugin', 'coolMethod', [arg0]);
+exports.authenticate = function (pin, success, error) {
+    exec(success, error, 'FingerprintPlugin', 'authenticate', [pin]);
 };

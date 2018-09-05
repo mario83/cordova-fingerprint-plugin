@@ -22,10 +22,12 @@ ionic cordova plugin remove https://github.com/CriptoCosmo/cordova-fingerprint-p
 #### Usage
 
 ```javascript
-cordova.plugins.FingerprintPlugin.authenticate(function(){
-  console.log("success"),
+var pin = '1234'; 
+
+cordova.plugins.FingerprintPlugin.authenticate(pin,function(){
+  console.log("success");
 },function(err){
-    console.log(err)  
+    console.log(err);
 })
 ```
 
