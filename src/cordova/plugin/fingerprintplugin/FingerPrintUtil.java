@@ -32,7 +32,7 @@ public class FingerPrintUtil {
 		String transformation = KeyProperties.KEY_ALGORITHM_AES + "/"  + KeyProperties.BLOCK_MODE_CBC + "/" + KeyProperties.ENCRYPTION_PADDING_PKCS7;
 		cipher = Cipher.getInstance(transformation);
 
-		FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher));
+		FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
 
 		fingerprintManager.authenticate(cryptoObject, cancellationSignal, 0 , callback, null);
 		
