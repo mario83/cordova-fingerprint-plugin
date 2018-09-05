@@ -5,7 +5,7 @@ import android.hardware.fingerprint.FingerprintManager;
 
 public class FingerPrintUtil {
 
-	private CancellationSignal cancellationSignal
+	private CancellationSignal cancellationSignal;
 
 	private FingerprintManager fingerprintManager;
 	private Context context;

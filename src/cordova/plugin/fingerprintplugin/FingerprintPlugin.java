@@ -32,7 +32,7 @@ public class FingerprintPlugin extends CordovaPlugin {
         Log.v(TAG, "initialize: FingerprintAuth");
 
         applicationContext = cordova.getActivity().getApplicationContext();
-        fingerPrintManager = getContext().getSystemService(FingerprintManager.class);
+        fingerPrintManager = applicationContext.getSystemService(FingerprintManager.class);
         
         fingerPrintUtil = new FingerPrintUtil(applicationContext,fingerPrintManager);
 	}
