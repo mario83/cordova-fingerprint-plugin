@@ -2,6 +2,7 @@ package cordova.plugin.fingerprintplugin;
 
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
+import android.os.CancellationSignal;
 
 public class FingerPrintUtil {
 
