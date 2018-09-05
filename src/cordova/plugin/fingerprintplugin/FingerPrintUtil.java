@@ -4,6 +4,8 @@ import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
 import android.security.keystore.KeyProperties;
+import android.util.Log;
+import android.util.Log;
 import javax.crypto.Cipher;
 
 public class FingerPrintUtil {
@@ -30,11 +32,13 @@ public class FingerPrintUtil {
         }
 		
 		String transformation = KeyProperties.KEY_ALGORITHM_AES + "/"  + KeyProperties.BLOCK_MODE_CBC + "/" + KeyProperties.ENCRYPTION_PADDING_PKCS7;
-		cipher = Cipher.getInstance(transformation);
-
-		FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
-
-		fingerprintManager.authenticate(cryptoObject, cancellationSignal, 0 , callback, null);
+		try {
+			cipher = Cipher.getInstance(transformation);
+			FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
+			fingerprintManager.authenticate(cryptoObject, cancellationSignal, 0 , callback, null);
+		}catch (NoSuchAlgorithmException e) {
+			Log.v("FingerPrintUtil", "NoSuchAlgorithmException");
+		}
 		
 	}
 	
