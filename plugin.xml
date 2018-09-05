@@ -10,6 +10,15 @@
                 <param name="android-package" value="cordova.plugin.fingerprintplugin.FingerprintPlugin" />
             </feature>
         </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+        </config-file>
+
+
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
         <source-file src="src/cordova/plugin/fingerprintplugin/FingerprintPlugin.java" target-dir="src/cordova-plugin-fingerprintplugin/FingerprintPlugin" />
