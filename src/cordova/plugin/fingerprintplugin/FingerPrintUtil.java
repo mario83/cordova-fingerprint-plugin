@@ -6,6 +6,7 @@ import android.os.CancellationSignal;
 import android.security.keystore.KeyProperties;
 import android.util.Log;
 import java.security.NoSuchAlgorithmException;
+import java.lang.Exception;
 import javax.crypto.Cipher;
 
 public class FingerPrintUtil {
@@ -38,6 +39,8 @@ public class FingerPrintUtil {
 			fingerprintManager.authenticate(cryptoObject, cancellationSignal, 0 , callback, null);
 		}catch (NoSuchAlgorithmException e) {
 			Log.v("FingerPrintUtil", "NoSuchAlgorithmException");
+		}catch (Exception e) {
+			Log.v("FingerPrintUtil", "Exception");
 		}
 		
 	}
