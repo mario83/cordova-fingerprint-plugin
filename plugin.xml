@@ -21,6 +21,5 @@
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
         <source-file src="src/cordova/plugin/fingerprintplugin/FingerprintPlugin.java" target-dir="src/cordova-plugin-fingerprintplugin/FingerprintPlugin" />
-        <source-file src="src/cordova/plugin/fingerprintplugin/FingerPrintUtil.java" target-dir="src/cordova-plugin-fingerprintplugin/FingerPrintUtil" />
     </platform>
 </plugin>
