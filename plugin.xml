@@ -14,9 +14,6 @@
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.USE_FINGERPRINT" />
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-        </config-file>
 
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
