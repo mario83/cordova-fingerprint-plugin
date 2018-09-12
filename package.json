@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-fingerprintplugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "cordova": {
     "id": "cordova-plugin-fingerprintplugin",
@@ -10,8 +10,18 @@
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "fingerprint",
+    "biometric"
   ],
   "author": "@marbola",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CriptoCosmo/cordova-fingerprint-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CriptoCosmo/cordova-fingerprint-plugin/issues"
+  },
+  "homepage": "https://github.com/CriptoCosmo/cordova-fingerprint-plugin#readme"
 }

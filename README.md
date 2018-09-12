@@ -1,23 +1,21 @@
 ## FingerprintPlugin
 
-
-
 #### Platforms 
 
 - Android 
 
 
-
 #### Installation
 
+```shell
+npm i cordova-plugin-fingerprintplugin
+cordova plugin add cordova-plugin-fingerprintplugin
 ```
-ionic cordova plugin add https://github.com/CriptoCosmo/cordova-fingerprint-plugin.git
-```
-```
-ionic cordova plugin remove https://github.com/CriptoCosmo/cordova-fingerprint-plugin.git
-```
+#### Remove
 
-
+```
+ionic cordova plugin remove cordova-plugin-fingerprintplugin
+```
 
 #### Usage
 
