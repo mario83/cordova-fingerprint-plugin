@@ -18,10 +18,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CriptoCosmo/cordova-fingerprint-plugin.git"
+    "url": "git+https://github.com/mario83/cordova-fingerprint-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/CriptoCosmo/cordova-fingerprint-plugin/issues"
+    "url": "https://github.com/mario83/cordova-fingerprint-plugin/issues"
   },
-  "homepage": "https://github.com/CriptoCosmo/cordova-fingerprint-plugin#readme"
+  "homepage": "https://github.com/mario83/cordova-fingerprint-plugin#readme"
 }
